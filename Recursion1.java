@@ -3,7 +3,6 @@ public class Recursion1{
         sayHi(5);
         countBackwards(5);
         System.out.println(factorial(5));
-        System.out.println(sum(10));
         System.out.println(fibonacci(9));
         System.out.println(triangular(4));
     }
@@ -37,13 +36,6 @@ public class Recursion1{
         else{
             return n * factorial(n-1);
         }
-    }
-
-    public static int sum(int number){
-        if(number==0){
-            return 0;
-        }
-        return number + sum(number-1);
     }
 
     public static int fibonacci(int number){
