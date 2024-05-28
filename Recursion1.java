@@ -3,8 +3,6 @@ public class Recursion1{
         sayHi(5);
         countBackwards(5);
         System.out.println(factorial(5));
-        System.out.println(reverseString("hello"));
-        System.out.println(isPalindrome("kayak"));
         System.out.println(sum(10));
         System.out.println(fibonacci(9));
         System.out.println(triangular(4));
@@ -39,25 +37,6 @@ public class Recursion1{
         else{
             return n * factorial(n-1);
         }
-    }
-
-    public static String reverseString(String input){
-        if(input.equals("")){
-            return "";
-        }
-        return reverseString(input.substring(1)) + input.charAt(0);
-    }
-
-    public static boolean isPalindrome(String input){
-        if(input.length()==0 || input.length()==1){
-            return true;
-        }
-
-        if(input.charAt(0)==input.charAt(input.length()-1)){
-            return isPalindrome(input.substring(1, input.length()-1));
-        }
-
-        return false;
     }
 
     public static int sum(int number){
